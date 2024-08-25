@@ -1,0 +1,16 @@
+{
+    "production": {
+        "aws_region": "us-east-1",
+        "s3_bucket": "flash-bucket-01",
+        "app_function": "app.app",
+        "profile_name": "default",
+        "project_name": "bfhl-api",
+        "runtime": "python3.8",
+        "timeout_seconds": 30,
+        "memory_size": 512,
+        "slim_handler": true,
+        "keep_warm": false,
+        "cors": true,
+        "use_apigateway": true
+    }
+}

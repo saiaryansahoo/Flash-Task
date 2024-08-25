@@ -1,0 +1,15 @@
+[build]
+  command = "gunicorn app:app"
+  publish = "."
+  functions = "."
+
+[build.environment]
+  PYTHON_VERSION = "3.9"
+
+[build.processing]
+  skip_processing = true
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200

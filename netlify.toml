@@ -1,9 +1,0 @@
-[build]
-  publish = "public"
-  command = "echo 'No build needed'"
-
-[[redirects]]
-  from = "/*"
-  to = "https://your-lambda-url.amazonaws.com/production/:splat"
-  status = 200
-  force = true
